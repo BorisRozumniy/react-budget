@@ -1,0 +1,96 @@
+    li {
+    list-style-type: none;
+    padding: 3px;
+    margin: 2px;
+    border-radius: 5px;
+}
+
+ul, p {
+    padding: 0;
+    margin: 0
+}
+
+.trans { grid-area: trans; }
+.hist { grid-area: hist; }
+.cate { grid-area: cate; }
+.create { grid-area: create; }
+.header { grid-area: header; }
+
+.main {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas:
+        "header header header"
+        "create hist trans"
+        "cate hist trans"
+}
+
+.cate ul {
+    overflow: auto;
+    height: 155px;
+}
+
+.main > * {
+    border-radius: 5px;
+    background: linear-gradient(30deg,#ed3, #5d9, #ed3) ;
+    padding: 15px;
+}
+
+.history-table  {
+    background: #fff;
+    border-radius: 6px;
+    /* position: relative; */
+    overflow: auto;
+    /* height: 500px; */
+}
+
+.name-of-transaction-item {
+  font-weight: bold;
+  font-size: 15px;
+  font-family: monospace;
+}
+
+input, select {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button.save {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.income { background: #adff2f7d}
+.expense { background: #ec78787a }
+
+.bgpopup {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	visibility: hidden;
+	z-index: 300;
+}
+
+.bgpopup .popupWindow {
+	padding: 40px;
+	background-color: #c5c5c5;
+	border-radius:5px;
+	box-shadow: 0px 0px 10px #000;
+	position: absolute;
+	top: 20%;
+}

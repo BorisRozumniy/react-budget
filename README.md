@@ -1,0 +1,1 @@
+Single page application designed for financial accounting. With the addition of a new transaction, you must enter the name, category and amount. Categories are created in advance. Transactions can be edited and deleted. Categories can be deleted. All data is stored in the local storage of the browser, that is, the changes will be available after a page reload.
